@@ -20,4 +20,23 @@ int main() {
     }
     cout<<endl;
   }
+  
+  //Method 2
+  
+  int n;
+  cin>>n;
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= n - i; j++) {
+      cout << "  ";
+    }
+    for (int j = i; j <= i*2-1 ; j++) {
+      cout<<j << " ";
+    }
+    int ele = i + (i-2);
+    for (int j = 1; j <= i - 1; j++) {
+      cout << ele-- << " ";
+    }
+    cout << endl;
+  }
+  return 0;
 }
