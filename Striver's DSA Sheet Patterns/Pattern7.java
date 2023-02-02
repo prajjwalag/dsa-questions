@@ -3,12 +3,11 @@ import java.util.Scanner;
 public class Main {
     static void printPattern(int n) {
         System.out.println();
-        for(int i = 1; i <= n; i++) {
-
-            for(int j = 1; j <= n-i; j++) {
+       for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n-i-1; j++) {
                 System.out.print(" ");
             }
-            for(int k = 1; k <= i*2-1; k++) {
+            for(int k = 0; k < i*2+1; k++) {
                 System.out.print("*");
             }
             System.out.println();
