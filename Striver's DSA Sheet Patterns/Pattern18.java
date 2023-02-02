@@ -6,13 +6,8 @@ public class Main {
         for(int i = 0; i < n; i++) {
             char alphabet = (char)('A' + n - i - 1) ;
 
-            for(int j = 0; j <= i; j++) {
+            for(int j = 0; j <= i; j++, alphabet++) {
                 System.out.print(alphabet + " ");
-                if(j < i) {
-                    alphabet++;
-                } else {
-                    alphabet--;
-                }
             }
             System.out.println();
         }
